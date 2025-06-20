@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--======== Css =========== -->
+  <link rel="stylesheet" href="pages/home/style.css" />
+
+  <link rel="stylesheet" href="pages/overall-style.css" />
+
+  <!--======= Google Fonts =========-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!--======= Bootstrap icons =======-->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+  <title>
+
+    DR. V.B. Bhasin
+  </title>
+  <style>
+    .stat-number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .stat-item {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .stats-section{
+      background-color: var(--background-primary);
+    }
+
+    @media screen and (min-width:900px){
+      .container{
+        display:grid;
+        grid-template-columns: auto auto;
+      }
+    }
+
+    .stat-cluster{
+      display: inline-flex;
+      align-items: center;
+    }
+    .stat-number{
+      margin-right: 10px;
+    }
+
+  </style>
+</head>
+
+<body onscroll="onScroll()">
+<header style="background: #003366; color: white;>
+  <nav class="scroll" id="nav">
+<!--<div style="max-width: 1200px; margin: auto; display: flex; align-items: center; flex-wrap: wrap; padding: 0 20px;">-->
+    <div class="logo" style="display: flex; align-items: center;">
+<!--      <a class="logo-link" href="#">-->
+<!--        <img class="new-logo" src="pages/images/profilePhoto.jpg" alt="logo">-->
+<!--        <h2 class="name-logo">Dr. V.B. Bhasin</h2>-->
+          <img src="pages/images/profilePhoto.jpg" alt="Dr. V.B. Bhasin" style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid white; object-fit: cover;">
+          <div style="padding: 0 20px;">
+            <h5 style="margin: 0; font-size: 1.2rem; padding-bottom: 5px">Dr. V.B. Bhasin</h5>
+            <p style="margin: 0; font-size: 0.85rem;">Senior Orthopedic Surgeon</p>
+          </div>
+<!--      </a>-->
+      <div class="menu-mobile" id="menu-mobile">
+        <button class="open">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_61_152)">
+              <path d="M10 20H30" stroke="var(--first-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M10 12H30" stroke="var(--first-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M18 28L30 28" stroke="var(--first-color)" stroke-width="4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </g>
+            <defs>
+              <filter id="filter0_d_61_152" x="-4" y="0" width="48" height="48" filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                               result="hardAlpha" />
+                <feOffset dy="4" />
+                <feGaussianBlur stdDeviation="2" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_61_152" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_61_152" result="shape" />
+              </filter>
+            </defs>
+          </svg>
+        </button>
+        <button class="close">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+<!--</div>-->
+
+    <div class="menu">
+      <ul class="ul-links">
+        <li><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+<!--        <li><a href="#specializations" style="color: white; text-decoration: none;">Specializations</a></li>-->
+        <li><a href="#intro" style="color: white; text-decoration: none;">Experience</a></li>
+<!--        <li><a href="#clinics" style="color: white; text-decoration: none;">Clinics</a></li>-->
+        <li><a href="#testimonials" style="color: white; text-decoration: none;">Testimonials</a></li>
+        <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+      </ul>
+<!--      <div class="nav-social">-->
+<!--        <a href="https://www.facebook.com/share/18MpTvVPRP/"><i class="bi bi-facebook nav-icon"></i></a>-->
+<!--        <a href="https://www.instagram.com/alokrhuematologist?igsh=MXI5Y3Nxd2wxMXJtaQ=="><i class="bi bi-instagram nav-icon"></i></a>-->
+<!--        <a href="https://www.youtube.com/@dralokkalyanirhuematology"><i class="bi bi-youtube nav-icon"></i></a>-->
+<!--      </div>-->
+    </div>
+  </nav>
+</header>
+
+  <main class="main">
+
+
+    <!-- ABOUT -->
+    <section class="about-content">
+      <div class="about-text">
+        <div class="exercise">
+          <span class="sub-title-span topRevealSmall">Dr. V.B. Bhasin</span>
+          <h2 class="title-about topRevealMedium">MBBS, MS - Orthopaedics, Orthopedic surgeon</h2>
+          <p class="about-description topRevealLarge">
+            With degrees of MBBS and MS from Maulana Azad Medical College, Dr. V.B. Bhasin is an Orthopedic Surgeon Associated with the Sir Ganga Ram Hospital, New Delhi.
+
+            He specializes in ACL Reconstruction, Arthroscopy of the Knee, Shoulder, Ankle, and Wrist.
+
+          </p>
+          <div>
+            <button onclick="window.location.href='#intro'" class="doc-read-more">Read More</button>
+          </div>
+          <div class="card">
+            <div class="card-img card-img-2"></div>
+            <h4><i class="bi bi-stopwatch"></i> Schedule</h4>
+            <h6>Monday - Friday</h6>
+            <span>12:00PM - 02:00PM &mdash; Ganga Ram Hospital</span>
+            <span>04:30PM - 07:30PM &mdash; The Westside Clinic</span>
+            <br>
+            <h6>Saturday</h6>
+            <span>03:30PM - 06:30PM &mdash; The Westside Clinic</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-img bottomRevealMedium">
+        <img src="pages/images/DrBhasin.jpg" alt="Dr. V.B. Bhasin" />
+      </div>
+    </section>
+
+<!--    <section class="stats-section">-->
+<!--      <div class="container" id="banner">-->
+<!--        <div class="stat-item">-->
+<!--          <span class="stat-cluster">-->
+<!--            <h3 class="stat-number" data-target="85000">0</h3>-->
+<!--            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-plus" viewBox="0 0 16 16">-->
+<!--              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>-->
+<!--            </svg>-->
+<!--          </span>-->
+<!--          <p>OPD consultation</p>-->
+<!--        </div>-->
+<!--        <div class="stat-item">-->
+<!--          <span class="stat-cluster">-->
+<!--            <h3 class="stat-number" data-target="43">0</h3>-->
+<!--            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-plus" viewBox="0 0 16 16">-->
+<!--              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>-->
+<!--            </svg>-->
+<!--          </span>-->
+<!--          <p>Years of Experience</p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div id="idForAbout"></div>-->
+<!--    </section>-->
+
+    <!------- INTRO ------------>
+<!--    <section class="intro" id="intro">-->
+<!--&lt;!&ndash;      <div class="welcome-text" style="text-align: center;">&ndash;&gt;-->
+<!--&lt;!&ndash;        <h2>Welcome to the World of Orthopedics !!</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;        <br />&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="about-description topRevealLarge">With a steadfast commitment to movement and healing, Dr. V.B. Bhasin brings over a decade of expertise in modern orthopaedic care. A proud alumnus of Maulana Azad Medical College, where he earned both his MBBS and MS (Orthopaedics), Dr. Bhasin has built a reputation for precision, innovation, and patient-first care.</span>&ndash;&gt;-->
+<!--&lt;!&ndash;        <br /><br />&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="about-description topRevealLarge">Currently practicing at the esteemed Sir Ganga Ram Hospital, New Delhi, he specializes in ACL reconstruction and advanced arthroscopic procedures involving the knee, shoulder, ankle, and wrist.</span>&ndash;&gt;-->
+<!--&lt;!&ndash;        <br /><br />&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="about-description topRevealLarge">His surgical finesse is enhanced by international training in arthroscopic surgery from world-class institutions such as Mass General Hospital, Boston (USA) and a leading medical institute in Germany — making him a globally informed, skillfully trained expert.</span>&ndash;&gt;-->
+<!--&lt;!&ndash;        </br></br>&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="about-description topRevealLarge">For Dr. Bhasin, orthopaedics is more than surgery — it's about restoring freedom. Whether it's helping an athlete return to the field or enabling an elderly patient to walk pain-free again, his goal remains the same: to empower every patient with strength, stability, and renewed confidence in movement.</span>&ndash;&gt;-->
+<!--&lt;!&ndash;        </br></br>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+
+<!--      <div class="welcome-text" style="text-align: center;">-->
+<!--        <h2>Dr. V.B. Bhasin – Senior Orthopaedic Surgeon</h2>-->
+<!--        <p>-->
+<!--          With over <strong>43 years of dedicated experience</strong>, Dr. V.B. Bhasin is one of the most respected names in orthopaedics in India. A graduate of <strong>Maulana Azad Medical College</strong>, where he earned both his <strong>MBBS and MS (Orthopaedics)</strong>, he is currently associated with <strong>Sir Ganga Ram Hospital</strong>, New Delhi — a leading center for advanced medical care.-->
+<!--        </p>-->
+<!--        <p>-->
+<!--          He is widely recognized for his <strong>surgical skill</strong>, <strong>patient-focused approach</strong>, and commitment to <strong>continuous learning</strong> and innovation.-->
+<!--        </p>-->
+
+<!--        <h3>Areas of Specialization</h3>-->
+<!--        <ul>-->
+<!--          <li>ACL Reconstruction</li>-->
+<!--          <li>Arthroscopic Surgery of the:-->
+<!--            <ul>-->
+<!--              <li>Knee</li>-->
+<!--              <li>Shoulder</li>-->
+<!--              <li>Ankle</li>-->
+<!--              <li>Wrist</li>-->
+<!--            </ul>-->
+<!--          </li>-->
+<!--          <li>Joint Replacement Surgery</li>-->
+<!--          <li>Orthopaedic Trauma Management</li>-->
+<!--          <li>Correction of Congenital Bony Deformities</li>-->
+<!--          <li>Spine Surgery</li>-->
+<!--          <li>Sports Injury Treatment</li>-->
+<!--        </ul>-->
+
+<!--        <h3>Global Training & Exposure</h3>-->
+<!--        <ul>-->
+<!--          <li>Massachusetts General Hospital, Boston, USA</li>-->
+<!--          <li>Renowned orthopaedic institute in Germany</li>-->
+<!--        </ul>-->
+
+<!--        <h3>Professional Recognition</h3>-->
+<!--        <ul>-->
+<!--          <li>Successfully performed numerous complex surgeries</li>-->
+<!--          <li>Trusted by thousands of satisfied patients</li>-->
+<!--          <li>Attended national medical conferences regularly</li>-->
+<!--          <li>Completed several advanced surgical training programs</li>-->
+<!--          <li>Published multiple academic papers in orthopaedics</li>-->
+<!--        </ul>-->
+
+<!--        <blockquote style="font-style: italic; color: #555; margin-top: 1em;">-->
+<!--          “For me, orthopaedics is about more than just surgery — it’s about helping people regain their strength, mobility, and confidence.”-->
+<!--        </blockquote>-->
+<!--      </div>-->
+<!--      -->
+<!--    </section>-->
+
+    <section class="doctor-profile-section-with-img" id="intro">
+      <style>
+        .doctor-profile-section-with-img {
+          background-color: #f9f9f9;
+          padding: 40px 20px;
+          font-family: 'Segoe UI', sans-serif;
+          color: #333;
+          max-width: 1200px;
+          margin: auto;
+          border-radius: 12px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 40px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+          animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .doctor-image {
+          flex: 1 1 300px;
+          max-width: 350px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .doctor-image img {
+          width: 100%;
+          max-width: 300px;
+          border-radius: 10px;
+          object-fit: cover;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .doctor-text-content {
+          flex: 2 1 500px;
+          text-align: left;
+        }
+
+        .doctor-text-content h2 {
+          font-size: 2rem;
+          margin-bottom: 20px;
+          color: #005377;
+        }
+
+        .doctor-text-content h3 {
+          font-size: 1.4rem;
+          margin-top: 30px;
+          margin-bottom: 15px;
+          color: #0077a6;
+        }
+
+        .doctor-text-content p {
+          line-height: 1.7;
+          margin-bottom: 15px;
+          font-size: 1rem;
+        }
+
+        .doctor-text-content ul {
+          list-style: none;
+          padding-left: 0;
+          margin-bottom: 20px;
+        }
+
+        .doctor-text-content ul li {
+          position: relative;
+          padding-left: 28px;
+          margin-bottom: 10px;
+          line-height: 1.6;
+        }
+
+        .doctor-text-content ul li::before {
+          content: "\f058";
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
+          position: absolute;
+          left: 0;
+          color: #0077a6;
+        }
+
+        .doctor-text-content blockquote {
+          font-style: italic;
+          color: #555;
+          border-left: 4px solid #ccc;
+          padding-left: 15px;
+          background-color: #f2f2f2;
+          border-radius: 6px;
+          padding: 10px 15px;
+          margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+          .doctor-profile-section-with-img {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+          }
+
+          .doctor-text-content {
+            text-align: center;
+          }
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      </style>
+
+      <!-- 👨‍⚕️ Centered Image -->
+      <div class="doctor-image">
+        <img src="pages/images/DrBhasin.jpg" alt="Dr. V.B. Bhasin">
+      </div>
+
+      <!-- 👨‍⚕️ Text Content -->
+      <div class="doctor-text-content">
+        <h2><i class="fas fa-user-md"></i> Dr. V.B. Bhasin – Senior Orthopaedic Surgeon</h2>
+
+        <p>
+          With over <strong>43 years of orthopaedic experience</strong>, Dr. V.B. Bhasin is known for his precision, surgical expertise, and compassionate care. He is an alumnus of <strong>Maulana Azad Medical College</strong> and currently practices at <strong>Sir Ganga Ram Hospital</strong>, New Delhi.
+        </p>
+
+        <p>
+          He has received advanced training from <strong>Massachusetts General Hospital (USA)</strong> and a reputed institute in Germany, enriching his expertise in minimally invasive and arthroscopic surgery.
+        </p>
+
+        <h3><i class="fas fa-stethoscope"></i> Special Interests</h3>
+        <ul>
+          <li>ACL Reconstruction & Arthroscopy</li>
+          <li>Joint Replacement Surgery</li>
+          <li>Sports Injuries & Spine Surgeries</li>
+        </ul>
+
+        <h3><i class="fas fa-award"></i> Career Highlights</h3>
+        <ul>
+          <li>Thousands of successful surgeries</li>
+          <li>National conference speaker</li>
+          <li>Published research and medical papers</li>
+        </ul>
+
+        <blockquote>
+          “Orthopaedics is more than just fixing bones — it’s about restoring confidence in every step.”
+        </blockquote>
+      </div>
+    </section>
+
+
+
+    <section>
+      <div class="reviews" id="testimonials">
+        <h2 class="section-heading">
+          <span>🗣️ Patient</span> <span class="highlight">Testimonials</span>
+        </h2>
+        <iframe id="review-slide" src="pages/home/reviews.html" width="100%" height="600px" style="border: none;"></iframe>
+      </div>
+
+      <style>
+        .section-heading {
+          font-size: 2.5rem;
+          font-weight: 700;
+          text-align: center;
+          /*margin-bottom: 2rem;*/
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          position: relative;
+          color: #1a1a1a;
+        }
+
+        .section-heading span.highlight {
+          color: #007bff;
+          position: relative;
+        }
+
+        .section-heading span.highlight::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          width: 100%;
+          height: 6px;
+          background-color: rgba(0, 123, 255, 0.2);
+          border-radius: 10px;
+          z-index: -1;
+        }
+
+        .reviews {
+          padding: 40px 20px;
+          background-color: #f8f9fa;
+          border-top: 1px solid #e0e0e0;
+        }
+
+        @media screen and (max-width: 768px) {
+          .section-heading {
+            font-size: 2rem;
+          }
+        }
+      </style>
+    </section>
+
+</section>
+    <!------- CONTACT ------------>
+    <section class="contact grid" id="contact">
+      <div class="contact-container">
+        <div class="contact-content-data">
+          <h2 class="title-contact bottomRevealSmall">Contact Us!</h2>
+          <div class="span-contact bottomRevealMedium contacto">
+            <span><i class="bi bi-geo-alt"></i> &nbsp; &nbsp; &nbsp;The Westside Clinic, 33/1, East Patel Nagar, Landmark: Near Patel Nagar Market, New Delhi - 110060</span>
+            <br />
+            <span><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;&nbsp;011-61261058</span>
+          </div>
+<!--          <button class="home-button bottomRevealLarge"-->
+<!--            onclick="window.location.href='//api.whatsapp.com/send?phone=918700129236&text=';">-->
+<!--            <i class="bi bi-whatsapp"></i> Schedule your appointment-->
+<!--          </button>-->
+        </div>
+        <div class="contact-content-img topRevealLarge">
+          <img class="contact-img" src="pages/images/contact.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!------- FOOTER ------------>
+  <footer>
+    <section class="footer grid" style="text-align:center;">
+      <div class="footer-content" >
+        <div class="footer-data">
+<!--          <h2>Delhi Arthritis and Rheumatology Clinic</h2>-->
+          <p>Copyright ©2024 All Rights Reserved.<br> Design & Developed by <a href="" id="trishna">Trishna</a></p>
+        </div>
+
+<!--        <div class="footer-social">-->
+<!--          <a href="https://www.facebook.com/"><i class="bi bi-facebook nav-icon"></i></a>-->
+<!--          <a href="https://www.instagram.com"><i class="bi bi-instagram nav-icon"></i></a>-->
+<!--          <a href="https://www.youtube.com"><i class="bi bi-youtube nav-icon"></i></a>-->
+<!--        </div>-->
+      </div>
+    </section>
+  </footer>
+
+
+  <!------- SCROLL TOP ------------>
+  <a id="scrollup" class="back-top" href="#">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="grey" />
+      <path d="M20 27V13" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 20L20 13L27 20" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+
+  </a>
+
+
+
+
+
+<!--  <a id="call-button" href="tel:+91 8700129236" style="position: fixed; bottom: 20px; left: 20px; z-index: 1000; text-decoration: none;">-->
+<!--    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer; transition: transform 0.3s ease;">-->
+<!--        <circle cx="20" cy="20" r="20" fill="#0077b6" />-->
+<!--        &lt;!&ndash; Phone icon &ndash;&gt;-->
+<!--        <path d="M15.5 12.5L19.5 16.5C19.7 16.7 19.7 17 19.5 17.2L18 18.8C18 18.9 18 19.1 18.1 19.2C19.3 21 20.8 22.5 22.6 23.7C22.7 23.8 22.9 23.8 23 23.8L24.8 22.3C25 22.1 25.3 22.1 25.5 22.3L29.5 26.3C29.7 26.5 29.7 26.8 29.5 27C28.3 28.2 26.6 28.8 24.8 28.8C22.8 28.8 20.1 27.7 16.9 24.5C13.7 21.3 12.6 18.6 12.6 16.6C12.6 14.8 13.2 13.1 14.4 11.9C14.6 11.7 14.9 11.7 15.1 11.9L15.5 12.5Z" fill="white"/>-->
+<!--    </svg>-->
+<!--  </a>-->
+
+
+
+
+
+<!--<a id="wp-button" href="https://wa.me/+918700129236" target="_blank"-->
+<!--    style="position: fixed; bottom: 20px; left: 80px; z-index: 1000; text-decoration: none;">-->
+<!--    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"-->
+<!--      style="cursor: pointer; transition: transform 0.3s ease; animation: blink 1.5s infinite;">-->
+<!--      <circle cx="20" cy="20" r="20" fill="#0077b6" />-->
+<!--      &lt;!&ndash; WhatsApp icon &ndash;&gt;-->
+<!--      <path fill="#FFFFFF" fill-rule="evenodd" clip-rule="evenodd"-->
+<!--        d="M20 9C14.486 9 10 13.486 10 19C10 20.897 10.597 22.676 11.68 24.126L11 27L14.004 25.958C15.405 26.873 17.133 27.4 19 27.4C24.514 27.4 29 22.914 29 17.4C29 11.886 24.514 9 20 9ZM16.659 12.601C16.754 12.58 16.92 12.524 17.088 12.473C17.168 12.45 17.235 12.43 17.298 12.415C17.392 12.392 17.482 12.376 17.569 12.362C17.851 12.318 18.187 12.367 18.507 12.611C18.808 12.834 19.33 13.551 19.495 13.738C19.67 13.941 19.762 14.12 19.818 14.229C19.891 14.372 19.892 14.522 19.828 14.674C19.77 14.803 19.508 15.348 19.364 15.566C19.273 15.712 19.159 15.829 19.048 15.946C18.937 16.059 18.823 16.186 18.794 16.267C18.772 16.33 18.76 16.421 18.78 16.519C18.845 16.885 19.1 17.284 19.478 17.708C19.883 18.163 20.32 18.481 20.803 18.71C20.937 18.772 21.05 18.788 21.148 18.79C21.266 18.793 21.372 18.742 21.446 18.655C21.497 18.598 21.712 18.387 21.951 18.17C22.079 18.06 22.218 18.04 22.346 18.088C22.457 18.128 23.381 18.47 23.557 18.533C23.729 18.593 23.871 18.615 23.971 18.626C24.123 18.642 24.243 18.653 24.313 18.662C24.542 18.694 24.737 18.713 24.883 18.752C25.106 18.811 25.226 18.939 25.286 19.136C25.34 19.309 25.344 19.504 25.313 19.709C25.255 20.116 24.73 21.035 23.943 21.425C23.673 21.565 23.402 21.678 23.127 21.771C22.736 21.904 22.336 21.998 21.936 22.038C21.141 22.114 20.452 22.047 19.803 21.823C18.753 21.455 17.665 20.755 16.723 19.748C16.263 19.26 15.859 18.687 15.535 18.063C15.324 17.661 15.156 17.226 15.072 16.768C14.948 16.095 14.989 15.481 15.259 14.884C15.442 14.487 15.718 14.084 15.978 13.732C16.218 13.402 16.436 13.138 16.561 12.976C16.635 12.877 16.688 12.807 16.721 12.768C16.742 12.745 16.652 12.624 16.659 12.601Z" />-->
+<!--    </svg>-->
+<!--  </a>-->
+
+<script>
+    // Blinking effect
+    setInterval(function() {
+        var button = document.querySelector('#call-button svg circle');
+        button.style.opacity = (button.style.opacity == '1' || button.style.opacity === '') ? '0.5' : '1';
+    }, 500);
+
+    // Hover scale effect
+    document.getElementById('call-button').addEventListener('mouseover', function() {
+        this.querySelector('svg').style.transform = 'scale(1.1)';
+    });
+
+    document.getElementById('call-button').addEventListener('mouseout', function() {
+        this.querySelector('svg').style.transform = 'scale(1)';
+    });
+</script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="pages/home/js/main.js"></script>
+  <script>
+    //for banner number loading from 0 to 10000 OPD consultations
+    document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".stat-number");
+
+  counters.forEach(counter => {
+    const updateCount = () => {
+        const target = +counter.getAttribute("data-target");
+        const current = +counter.innerText;
+
+        const increment = target / 200; // Adjust this value to control the speed
+
+        if (current < target) {
+          counter.innerText = Math.ceil(current + increment);
+          setTimeout(updateCount, 10); // Adjust this value to control the interval
+        } else {
+          counter.innerText = target;
+        }
+    };
+
+        updateCount();
+  });
+  });
+
+  </script>
+</body>
+
+</html>

@@ -325,7 +325,8 @@ div:has(> .doc-read-more) {
 .card {
   width: 70%;
   margin: auto;
-  border: none;
+  /*border: none;*/
+  border: none !important;
   border-radius: 20px;
   padding: 2rem;
   position: relative;
@@ -340,14 +341,15 @@ div:has(> .doc-read-more) {
 }
 
 .card h6 {
-  color: #dce9e2;
-  font-weight: var(--font-regular);
-  font-size: var(--mb-1);
+  color: #ffffff;
+  font-weight: var(--font-bold);
+
 }
 
 .card span {
-  font-weight: var(--font-bold);
-  color: #ffffff;
+  font-weight: var(--font-regular);
+  color: #dce9e2;
+  font-size: var(--mb-1);
 }
 
 .card-img-1,
@@ -1151,13 +1153,16 @@ text-align: center;
     grid-template-columns: repeat(4, 1fr);
   }
 
+  .about-img {
+    /*width: 30rem;*/
+    display: flex;
+    justify-content: center;  /* center horizontally */
+    align-items: center;
+  }
+
   .experts-content {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--mb-2-5);
-  }
-
-  .about-img img {
-    width: 30rem;
   }
 
   .swiper-wrapper {

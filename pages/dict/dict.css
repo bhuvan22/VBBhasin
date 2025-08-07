@@ -383,18 +383,18 @@ div:has(> .doc-read-more) {
 }
 
 .card-img-1 {
-  background-image: url("/assets/images/card-home-preco.jpg");
+  background-image: url("/pages/images/card-home-preco.jpg");
   background-position: -500px 600px;
 }
 
 .card-img-2 {
-  background-image: url("/assets/images/card-home-atendimento.jpg");
+  background-image: url("/pages/images/card-home-atendimento.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .card-img-3 {
-  background-image: url("/assets/images/card-home-contato.jpg");
+  background-image: url("/pages/images/card-home-contato.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }

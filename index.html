@@ -131,47 +131,117 @@
 
     <!-- ABOUT -->
     <section class="about-content">
-      <div class="about-text">
-        <div class="exercise">
-          <span class="sub-title-span topRevealSmall">Dr. V.B. Bhasin</span>
-          <h2 class="title-about topRevealMedium">MBBS, MS (Orthopaedics)</h2>
-          <h2 class="title-about topRevealMedium">Sr. Consultant & Chairman | Dept. of Orthopedics | Sir Ganga Ram Hospital, New Delhi</h2>
-          <p class="about-description topRevealLarge">
-            With degrees of MBBS and MS from Maulana Azad Medical College, Dr. V.B. Bhasin is an Orthopedic Surgeon Associated with the Sir Ganga Ram Hospital, New Delhi.
+  <style>
+    .about-content {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      background: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    }
+    .about-text {
+      flex: 2 1 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      min-width: 260px;
+    }
+    .about-img {
+      flex: 1 1 300px;
+      max-width: 340px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .about-img img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: block;
+    }
+    .card {
+      margin-top: 20px;
+      padding: 22px;
+      background: #e9f6fd;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .card h4, .card h6, .card span {
+      margin: 6px 0;
+    }
 
-            He specializes in ACL Reconstruction, Arthroscopy of the Knee, Shoulder, Ankle, and Wrist.
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column-reverse;
+        gap: 24px;
+        padding: 26px 8px;
+      }
+      .about-img, .about-text {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        align-items: center;
+      }
+      .about-img img {
+        max-width: 220px;
+        border-radius: 8px;
+      }
+    }
 
-          </p>
-          <div>
-            <button onclick="window.location.href='#intro'" class="doc-read-more">Read More</button>
-          </div>
-          <div class="card">
-            <div class="card-img card-img-2"></div>
-            <h4><i class="bi bi-stopwatch"></i> Plan a Visit !!</h4>
-            <h6>Sir Ganga Ram Hospital, Room No: F-24</h6>
-            <h6>Telephone no : 011 - 4225 1724</h6>
-            <span>Monday to Friday &mdash; 12:00PM - 02:00PM</span>
-            <span>Monday to Friday &mdash; 12:00PM - 02:00PM</span>
-<!--            <span>Telephone no - 011 4225 1724 &mdash; bestarthroscopy@hotmail.com</span>-->
-<!--            <span>Telephone no - 011 4225 1724 || 011-4167 0060 (SPAM number)</span>-->
-            <br>
-            <h6>The Westside Clinic</h6>
-            <h6>Mobile No : +91 85957 20087</h6>   <!-- || 011-4167 0060 (SPAM number)  -->
-            <span>Monday to Friday &mdash; 04:30PM - 07:30PM</span>
-            <span>Saturday &mdash; 03:30PM - 06:30PM</span><br>
-<!--            <h6>NOTE: </h6> <span>011-4167 0060 (SPAM) Please don't call on this Number </span>-->
-          </div>
+    @media (max-width: 480px) {
+      .about-content {
+        gap: 16px;
+        padding: 13px 2px;
+        border-radius: 6px;
+      }
+      .about-img img {
+        max-width: 150px;
+      }
+      .card {
+        padding: 13px;
+      }
+    }
+  </style>
 
-
-
-
-
-        </div>
+  <div class="about-text">
+    <div class="exercise">
+      <span class="sub-title-span topRevealSmall">Dr. V.B. Bhasin</span>
+      <h2 class="title-about topRevealMedium">MBBS, MS (Orthopaedics)</h2>
+      <h2 class="title-about topRevealMedium">Sr. Consultant & Chairman | Dept. of Orthopedics | Sir Ganga Ram Hospital, New Delhi</h2>
+      <p class="about-description topRevealLarge">
+        With degrees of MBBS and MS from Maulana Azad Medical College, Dr. V.B. Bhasin is an Orthopedic Surgeon Associated with the Sir Ganga Ram Hospital, New Delhi.
+        He specializes in ACL Reconstruction, Arthroscopy of the Knee, Shoulder, Ankle, and Wrist.
+      </p>
+      <div>
+        <button onclick="window.location.href='#intro'" class="doc-read-more">Read More</button>
       </div>
-      <div class="about-img bottomRevealMedium">
-        <img src="pages/images/profilePhoto.jpg" alt="Dr. V.B. Bhasin" />
+      <div class="card">
+        <div class="card-img card-img-2"></div>
+        <h4><i class="bi bi-stopwatch"></i> Plan a Visit !!</h4>
+        <h6>Sir Ganga Ram Hospital, Room No: F-24</h6>
+        <h6>Telephone no : 011 - 4225 1724</h6>
+        <span>Monday to Friday &mdash; 12:00PM - 02:00PM</span>
+        <span>Monday to Friday &mdash; 12:00PM - 02:00PM</span><br>
+        <h6>The Westside Clinic</h6>
+        <h6>Mobile No : +91 85957 20087</h6>
+        <span>Monday to Friday &mdash; 04:30PM - 07:30PM</span>
+        <span>Saturday &mdash; 03:30PM - 06:30PM</span><br>
       </div>
-    </section>
+    </div>
+  </div>
+  <div class="about-img bottomRevealMedium">
+    <img src="pages/images/profilePhoto.jpg" alt="Dr. V.B. Bhasin" />
+  </div>
+</section>
+
 
 <!--    <section class="stats-section">-->
 <!--      <div class="container" id="banner">-->

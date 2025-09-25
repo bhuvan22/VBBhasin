@@ -579,27 +579,35 @@
 
 </section>
     <!------- CONTACT ------------>
-    <section class="contact grid" id="contact">
-      <div class="contact-container">
-        <div class="contact-content-data">
-          <h2 class="title-contact bottomRevealSmall">Contact Us!</h2>
-          <div class="span-contact bottomRevealMedium contacto">
-            <span><i class="bi bi-geo-alt"></i> &nbsp; &nbsp; &nbsp;The Westside Clinic, 33/1, East Patel Nagar, Landmark: Near Patel Nagar Market, New Delhi - 110060</span>
-            <br />
-<!--            <span><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;&nbsp;8595720087, 011-41670060</span>-->
-            <span><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;&nbsp; +91 85957 20087</span>
+<section id="contact" class="w-full max-w-6xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden p-6 md:p-10 lg:flex lg:flex-row lg:items-center">
+    <!-- Contact content (left side on desktop) -->
+    <div class="flex-1 lg:pr-8 mb-8 lg:mb-0">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 lg:mb-6">Contact Us!</h2>
+        <div class="space-y-4 text-gray-600 text-lg md:text-xl font-medium">
+            <div class="flex items-start">
+                <i class="bi bi-geo-alt text-2xl md:text-3xl text-blue-600 mr-4"></i>
+                <span>The Westside Clinic, 33/1, East Patel Nagar, Landmark: Near Patel Nagar Market, New Delhi - 110060</span>
+            </div>
+            <div class="flex items-center">
+                <i class="bi bi-telephone-fill text-xl md:text-2xl text-blue-600 mr-4"></i>
+                <a href="tel:+918595720087" class="hover:underline">+91 85957 20087</a>
+            </div>
+        </div>
+        <!-- WhatsApp button -->
+        <a href="https://api.whatsapp.com/send?phone=918700129236&text=Hello, I would like to schedule an appointment."
+           class="mt-6 md:mt-8 inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-full shadow-lg text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-300">
+            <i class="bi bi-whatsapp mr-2 text-xl"></i>
+            Schedule your appointment
+        </a>
+    </div>
 
-          </div>
-<!--          <button class="home-button bottomRevealLarge"-->
-<!--            onclick="window.location.href='//api.whatsapp.com/send?phone=918700129236&text=';">-->
-<!--            <i class="bi bi-whatsapp"></i> Schedule your appointment-->
-<!--          </button>-->
-        </div>
-        <div class="contact-content-img topRevealLarge">
-          <img class="contact-img" src="pages/images/contact.png" alt="" />
-        </div>
-      </div>
-    </section>
+    <!-- Contact image (right side on desktop) -->
+    <div class="flex-1 lg:flex-shrink-0 lg:w-1/2 flex justify-center">
+        <img class="w-full h-auto max-w-sm rounded-xl shadow-lg" 
+             src="https://placehold.co/600x400/1C65E1/FFFFFF?text=Contact+Image" 
+             alt="Contact Illustration" />
+    </div>
+</section>
 
   </main>
 

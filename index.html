@@ -578,37 +578,28 @@
     </section>
 
 </section>
-<!-- Copy this entire <section> block and paste it into the <body> of your main index.html -->
-<section id="contact" class="w-full max-w-6xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden p-6 md:p-10 lg:flex lg:flex-row lg:items-center">
-    <!-- Contact content (left side on desktop) -->
-    <div class="flex-1 lg:pr-8 mb-8 lg:mb-0">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 lg:mb-6">Contact Us!</h2>
-        <div class="space-y-4 text-gray-600 text-lg md:text-xl font-medium">
-            <div class="flex items-start">
-                <i class="bi bi-geo-alt text-2xl md:text-3xl text-blue-600 mr-4"></i>
-                <span class="break-words">The Westside Clinic, 33/1, East Patel Nagar, Landmark: Near Patel Nagar Market, New Delhi - 110060</span>
-            </div>
-            <div class="flex items-center">
-                <i class="bi bi-telephone-fill text-xl md:text-2xl text-blue-600 mr-4"></i>
-                <a href="tel:+918595720087" class="hover:underline">+91 85957 20087</a>
-            </div>
+    <!------- CONTACT ------------>
+    <section class="contact grid" id="contact">
+      <div class="contact-container">
+        <div class="contact-content-data">
+          <h2 class="title-contact bottomRevealSmall">Contact Us!</h2>
+          <div class="span-contact bottomRevealMedium contacto">
+            <span><i class="bi bi-geo-alt"></i> &nbsp; &nbsp; &nbsp;The Westside Clinic, 33/1, East Patel Nagar, Landmark: Near Patel Nagar Market, New Delhi - 110060</span>
+            <br />
+<!--            <span><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;&nbsp;8595720087, 011-41670060</span>-->
+            <span><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;&nbsp; +91 85957 20087</span>
+
+          </div>
+<!--          <button class="home-button bottomRevealLarge"-->
+<!--            onclick="window.location.href='//api.whatsapp.com/send?phone=918700129236&text=';">-->
+<!--            <i class="bi bi-whatsapp"></i> Schedule your appointment-->
+<!--          </button>-->
         </div>
-        <!-- WhatsApp button -->
-        <a href="https://api.whatsapp.com/send?phone=918700129236&text=Hello, I would like to schedule an appointment."
-           class="mt-6 md:mt-8 inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-full shadow-lg text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-300">
-            <i class="bi bi-whatsapp mr-2 text-xl"></i>
-            Schedule your appointment
-        </a>
-    </div>
-
-    <!-- Contact image (right side on desktop) -->
-    <div class="flex-1 lg:flex-shrink-0 lg:w-1/2 flex justify-center">
-        <img class="w-full h-auto max-w-sm rounded-xl shadow-lg" 
-             src="https://placehold.co/600x400/1C65E1/FFFFFF?text=Contact+Image" 
-             alt="Contact Illustration" />
-    </div>
-</section>
-
+        <div class="contact-content-img topRevealLarge">
+          <img class="contact-img" src="pages/images/contact.png" alt="" />
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -642,48 +633,6 @@
   </a>
 
 
-
-
-
-<!--  <a id="call-button" href="tel:+91 8700129236" style="position: fixed; bottom: 20px; left: 20px; z-index: 1000; text-decoration: none;">-->
-<!--    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer; transition: transform 0.3s ease;">-->
-<!--        <circle cx="20" cy="20" r="20" fill="#0077b6" />-->
-<!--        &lt;!&ndash; Phone icon &ndash;&gt;-->
-<!--        <path d="M15.5 12.5L19.5 16.5C19.7 16.7 19.7 17 19.5 17.2L18 18.8C18 18.9 18 19.1 18.1 19.2C19.3 21 20.8 22.5 22.6 23.7C22.7 23.8 22.9 23.8 23 23.8L24.8 22.3C25 22.1 25.3 22.1 25.5 22.3L29.5 26.3C29.7 26.5 29.7 26.8 29.5 27C28.3 28.2 26.6 28.8 24.8 28.8C22.8 28.8 20.1 27.7 16.9 24.5C13.7 21.3 12.6 18.6 12.6 16.6C12.6 14.8 13.2 13.1 14.4 11.9C14.6 11.7 14.9 11.7 15.1 11.9L15.5 12.5Z" fill="white"/>-->
-<!--    </svg>-->
-<!--  </a>-->
-
-
-
-
-
-<!--<a id="wp-button" href="https://wa.me/+918700129236" target="_blank"-->
-<!--    style="position: fixed; bottom: 20px; left: 80px; z-index: 1000; text-decoration: none;">-->
-<!--    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"-->
-<!--      style="cursor: pointer; transition: transform 0.3s ease; animation: blink 1.5s infinite;">-->
-<!--      <circle cx="20" cy="20" r="20" fill="#0077b6" />-->
-<!--      &lt;!&ndash; WhatsApp icon &ndash;&gt;-->
-<!--      <path fill="#FFFFFF" fill-rule="evenodd" clip-rule="evenodd"-->
-<!--        d="M20 9C14.486 9 10 13.486 10 19C10 20.897 10.597 22.676 11.68 24.126L11 27L14.004 25.958C15.405 26.873 17.133 27.4 19 27.4C24.514 27.4 29 22.914 29 17.4C29 11.886 24.514 9 20 9ZM16.659 12.601C16.754 12.58 16.92 12.524 17.088 12.473C17.168 12.45 17.235 12.43 17.298 12.415C17.392 12.392 17.482 12.376 17.569 12.362C17.851 12.318 18.187 12.367 18.507 12.611C18.808 12.834 19.33 13.551 19.495 13.738C19.67 13.941 19.762 14.12 19.818 14.229C19.891 14.372 19.892 14.522 19.828 14.674C19.77 14.803 19.508 15.348 19.364 15.566C19.273 15.712 19.159 15.829 19.048 15.946C18.937 16.059 18.823 16.186 18.794 16.267C18.772 16.33 18.76 16.421 18.78 16.519C18.845 16.885 19.1 17.284 19.478 17.708C19.883 18.163 20.32 18.481 20.803 18.71C20.937 18.772 21.05 18.788 21.148 18.79C21.266 18.793 21.372 18.742 21.446 18.655C21.497 18.598 21.712 18.387 21.951 18.17C22.079 18.06 22.218 18.04 22.346 18.088C22.457 18.128 23.381 18.47 23.557 18.533C23.729 18.593 23.871 18.615 23.971 18.626C24.123 18.642 24.243 18.653 24.313 18.662C24.542 18.694 24.737 18.713 24.883 18.752C25.106 18.811 25.226 18.939 25.286 19.136C25.34 19.309 25.344 19.504 25.313 19.709C25.255 20.116 24.73 21.035 23.943 21.425C23.673 21.565 23.402 21.678 23.127 21.771C22.736 21.904 22.336 21.998 21.936 22.038C21.141 22.114 20.452 22.047 19.803 21.823C18.753 21.455 17.665 20.755 16.723 19.748C16.263 19.26 15.859 18.687 15.535 18.063C15.324 17.661 15.156 17.226 15.072 16.768C14.948 16.095 14.989 15.481 15.259 14.884C15.442 14.487 15.718 14.084 15.978 13.732C16.218 13.402 16.436 13.138 16.561 12.976C16.635 12.877 16.688 12.807 16.721 12.768C16.742 12.745 16.652 12.624 16.659 12.601Z" />-->
-<!--    </svg>-->
-<!--  </a>-->
-
-<!--<script>-->
-<!--    // Blinking effect-->
-<!--    setInterval(function() {-->
-<!--        var button = document.querySelector('#call-button svg circle');-->
-<!--        button.style.opacity = (button.style.opacity == '1' || button.style.opacity === '') ? '0.5' : '1';-->
-<!--    }, 500);-->
-
-<!--    // Hover scale effect-->
-<!--    document.getElementById('call-button').addEventListener('mouseover', function() {-->
-<!--        this.querySelector('svg').style.transform = 'scale(1.1)';-->
-<!--    });-->
-
-<!--    document.getElementById('call-button').addEventListener('mouseout', function() {-->
-<!--        this.querySelector('svg').style.transform = 'scale(1)';-->
-<!--    });-->
-<!--</script>-->
 
   <script src="https://unpkg.com/scrollreveal"></script>
   <!-- Bootstrap JS -->
